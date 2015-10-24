@@ -12,12 +12,15 @@
 		6) Append/Merge the data in train_DF and test_DF dataframes in tot_DF dataframe using rbind
 		7) Add column names to the merged dataframe tot_DF ,by taking column names  from features_DF dataframe 
 
-		8) Extract column indexes from features_DF which has 'mean' or 'std' in their column names, using grep command
+		8) Extract column indexes from features_DF which has 'mean' or 'std' in their column names,
+		   using grep command
 		9) Extract the columns based on indexes from step 8 in tot_DF data frame
-		10)Append/Merge the activity data in train_ACT_DF and test_ACT_DF dataframes in tot_ACT_DF dataframe using rbind
+		10)Append/Merge the activity data in train_ACT_DF and test_ACT_DF dataframes in tot_ACT_DF dataframe 
+		   using rbind
 		11) Assign string values to activity factors  in ftot_ACT_DF
 		12) Create a matrix act_matrix using ftot_ACT_DF with column name "ActivityName"
-		13) Append/Merge the Subject data in train_SUB_DF and test_SUB_DF dataframes in tot_SUB_DF dataframe using rbind     
+		13) Append/Merge the Subject data in train_SUB_DF and test_SUB_DF dataframes in tot_SUB_DF dataframe 
+		    using rbind     
 		14) Add column name of "SubjectID" to the column in tot_SUB_DF
 		15) Merge tot_SUB_DF,act_matrix and tot_DF  in merged_DF  using cbind 
 		16) Now using the reshape2 packages melt and dcast to create the required tidy dataset tidyDataset_DF 
