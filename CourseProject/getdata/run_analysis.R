@@ -1,3 +1,6 @@
+## This script processes the datasets provided to give an output file 
+## Output file contains the processed tidy data 
+
 train_DF<-read.table("./UCI HAR Dataset/train/X_train.txt")
 test_DF<- read.table("./UCI HAR Dataset/test/X_test.txt")
 
