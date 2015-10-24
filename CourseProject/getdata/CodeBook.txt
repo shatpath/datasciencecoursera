@@ -17,7 +17,8 @@ CodeBook: Variable Name						Units						     Description
 		
 		"SubjectID"                         Number                            	Person Id 
 		"ActivityName"                      Name of activity                  	Activity type like Walking, Standing etc.
-		"tBodyAcc-mean()-X"                 N/m2							  	Acceleration units are normally measured in N/m2 , true for all (t prefix) Acceleration measurements
+		"tBodyAcc-mean()-X"                 N/m2							  	Acceleration units are normally measured in N/m2 , 
+																				true for all (t prefix) Acceleration measurements
 		"tBodyAcc-mean()-Y"                 N/m2							  	
 		"tGravityAcc-mean()-X"              N/m2                                
 		"tGravityAcc-mean()-Y"              N/m2
@@ -25,7 +26,8 @@ CodeBook: Variable Name						Units						     Description
 		"tBodyAccJerk-mean()-X"             N/m2
 		"tBodyAccJerk-mean()-Y"             N/m2
 		"tBodyAccJerk-mean()-Z"             N/m2
-		"tBodyGyro-mean()-X"                Revolution/sec						Gyroscope measures in Revolution/sec, true for all gyroscope based (t prefix)measurements
+		"tBodyGyro-mean()-X"                Revolution/sec						Gyroscope measures in Revolution/sec, true for all 
+																				gyroscope based (t prefix)measurements
 		"tBodyGyro-mean()-Y"                Revolution/sec
 		"tBodyGyro-mean()-Z"                Revolution/sec
 		"tBodyGyroJerk-mean()-X"            Revolution/sec
@@ -36,7 +38,8 @@ CodeBook: Variable Name						Units						     Description
 		"tBodyAccJerkMag-mean()"            Seconds
 		"tBodyGyroMag-mean()"               Revolution/sec
 		"tBodyGyroJerkMag-mean()"           Revolution/sec
-		"fBodyAcc-mean()-X"                 N/m2								Fast Fourier transform of acceleration , holds for all (prefix f measurements)
+		"fBodyAcc-mean()-X"                 N/m2								Fast Fourier transform of acceleration , holds good 
+		                                                                         for all (prefix f measurements)
 		"fBodyAcc-mean()-Y"                 N/m2
 		"fBodyAcc-mean()-Z"                 N/m2
 		"fBodyAcc-meanFreq()-X"             N/m2 
