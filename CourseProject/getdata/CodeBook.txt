@@ -1,24 +1,25 @@
-StudyDesign : The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
-              Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
-			  wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, 
-			  we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
-			  The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly 
-			  partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% 
-			  the test data. 
-			  The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled 
-			  in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, 
-			  which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body 
-			  acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a 
-			  filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating 
-			  variables from the time and frequency domain. See 'features_info.txt' for more details.  
+#StudyDesign : 
+	The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
+    Each person performed six activities (WALKING,WALKING_UPSTAIRS,WALKING_DOWNSTAIRS, SITTING,STANDING,LAYING) 
+	wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, 
+	we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
+	The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly 
+	partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% 
+	the test data. 
+	The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled 
+	in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, 
+	which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body 
+	acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a 
+	filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating 
+	variables from the time and frequency domain. See 'features_info.txt' for more details.  
 
 
-CodeBook: Variable Name						Units						     Description
+#CodeBook: Variable Name						Units				Description
 		
-		"SubjectID"                         Number                            	Person Id 
-		"ActivityName"                      Name of activity                  	Activity type like Walking, Standing etc.
-		"tBodyAcc-mean()-X"                 N/m2							  	Acceleration units are normally measured in N/m2 , 
-																				true for all (t prefix) Acceleration measurements
+		"SubjectID"                         Number                  Person Id 
+		"ActivityName"                      Name of activity        Activity type like Walking, Standing etc.
+		"tBodyAcc-mean()-X"                 N/m2					Acceleration units are normally measured in N/m2 , 
+																	true for all (t prefix) Acceleration measurements
 		"tBodyAcc-mean()-Y"                 N/m2							  	
 		"tGravityAcc-mean()-X"              N/m2                                
 		"tGravityAcc-mean()-Y"              N/m2
@@ -26,8 +27,8 @@ CodeBook: Variable Name						Units						     Description
 		"tBodyAccJerk-mean()-X"             N/m2
 		"tBodyAccJerk-mean()-Y"             N/m2
 		"tBodyAccJerk-mean()-Z"             N/m2
-		"tBodyGyro-mean()-X"                Revolution/sec						Gyroscope measures in Revolution/sec, true for all 
-																				gyroscope based (t prefix)measurements
+		"tBodyGyro-mean()-X"                Revolution/sec			Gyroscope measures in Revolution/sec, true for all 
+																	gyroscope based (t prefix) measurements
 		"tBodyGyro-mean()-Y"                Revolution/sec
 		"tBodyGyro-mean()-Z"                Revolution/sec
 		"tBodyGyroJerk-mean()-X"            Revolution/sec
@@ -38,8 +39,8 @@ CodeBook: Variable Name						Units						     Description
 		"tBodyAccJerkMag-mean()"            Seconds
 		"tBodyGyroMag-mean()"               Revolution/sec
 		"tBodyGyroJerkMag-mean()"           Revolution/sec
-		"fBodyAcc-mean()-X"                 N/m2								Fast Fourier transform of acceleration , holds good 
-		                                                                         for all (prefix f measurements)
+		"fBodyAcc-mean()-X"                 N/m2					Fast Fourier transform of acceleration , holds good 
+		                                                            for all (prefix f) measurements
 		"fBodyAcc-mean()-Y"                 N/m2
 		"fBodyAcc-mean()-Z"                 N/m2
 		"fBodyAcc-meanFreq()-X"             N/m2 
