@@ -1,0 +1,85 @@
+StudyDesign : The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+			  The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+ 
+
+
+CodeBook: Variable Name						Units						     Description
+		
+		"SubjectID"                         Number                            	Person Id 
+		"ActivityName"                      Name of activity                  	Activity type like Walking, Standing etc.
+		"tBodyAcc-mean()-X"                 N/m2							  	Acceleration units are normally measured in N/m2 , true for all (t prefix) Acceleration measurements
+		"tBodyAcc-mean()-Y"                 N/m2							  	
+		"tGravityAcc-mean()-X"              N/m2                                
+		"tGravityAcc-mean()-Y"              N/m2
+		"tGravityAcc-mean()-Z"              N/m2
+		"tBodyAccJerk-mean()-X"             N/m2
+		"tBodyAccJerk-mean()-Y"             N/m2
+		"tBodyAccJerk-mean()-Z"             N/m2
+		"tBodyGyro-mean()-X"                Revolution/sec						Gyroscope measures in Revolution/sec, true for all gyroscope based (t prefix)measurements
+		"tBodyGyro-mean()-Y"                Revolution/sec
+		"tBodyGyro-mean()-Z"                Revolution/sec
+		"tBodyGyroJerk-mean()-X"            Revolution/sec
+		"tBodyGyroJerk-mean()-Y"            Revolution/sec
+		"tBodyGyroJerk-mean()-Z"            Revolution/sec
+		"tBodyAccMag-mean()"                Seconds
+		"tGravityAccMag-mean()"             Seconds
+		"tBodyAccJerkMag-mean()"            Seconds
+		"tBodyGyroMag-mean()"               Revolution/sec
+		"tBodyGyroJerkMag-mean()"           Revolution/sec
+		"fBodyAcc-mean()-X"                 N/m2								Fast Fourier transform of acceleration , holds for all (prefix f measurements)
+		"fBodyAcc-mean()-Y"                 N/m2
+		"fBodyAcc-mean()-Z"                 N/m2
+		"fBodyAcc-meanFreq()-X"             N/m2 
+		"fBodyAcc-meanFreq()-Y"             N/m2
+		"fBodyAcc-meanFreq()-Z"             N/m2
+		"fBodyAccJerk-mean()-X"             N/m2
+		"fBodyAccJerk-mean()-Y"             N/m2
+		"fBodyAccJerk-mean()-Z"             N/m2
+		"fBodyAccJerk-meanFreq()-X"         N/m2
+		"fBodyAccJerk-meanFreq()-Y"         N/m2
+		"fBodyAccJerk-meanFreq()-Z"         N/m2
+		"fBodyGyro-mean()-X"                Revolution/sec
+		"fBodyGyro-mean()-Y"                Revolution/sec
+		"fBodyGyro-mean()-Z"                Revolution/sec
+		"fBodyGyro-meanFreq()-X"            Revolution/sec
+		"fBodyGyro-meanFreq()-Y"            Revolution/sec
+		"fBodyGyro-meanFreq()-Z"            Revolution/sec
+		"fBodyAccMag-mean()"                N/m2
+		"fBodyAccMag-meanFreq()"            N/m2
+		"fBodyBodyAccJerkMag-mean()"        N/m2
+		"fBodyBodyAccJerkMag-meanFreq()"    N/m2
+		"fBodyBodyGyroMag-mean()"           Revolution/sec
+		"fBodyBodyGyroJerkMag-meanFreq()"   Revolution/sec
+		"tBodyAcc-std()-X"				    N/m2                
+		"tBodyAcc-std()-Y"                  N/m2
+		"tBodyAcc-std()-Z"                  N/m2 
+		"tGravityAcc-std()-X"               N/m2
+		"tGravityAcc-std()-Y"               N/m2
+		"tGravityAcc-std()-Z"               N/m2
+		"tBodyAccJerk-std()-X"              N/m2
+		"tBodyAccJerk-std()-Y"              N/m2
+		"tBodyAccJerk-std()-Z"              N/m2
+		"tBodyGyro-std()-X"                 Revolution/sec
+		"tBodyGyro-std()-Y"                 Revolution/sec
+		"tBodyGyro-std()-Z"                 Revolution/sec
+		"tBodyGyroJerk-std()-X"             Revolution/sec
+		"tBodyGyroJerk-std()-Y"             Revolution/sec
+		"tBodyGyroJerk-std()-Z"             Revolution/sec
+		"tBodyAccMag-std()"                 N/m2
+		"tGravityAccMag-std()"              N/m2
+		"tBodyAccJerkMag-std()"             N/m2
+		"tBodyGyroMag-std()"                Revolution/sec
+		"tBodyGyroJerkMag-std()"            Revolution/sec
+		"fBodyAcc-std()-X"                  N/m2
+		"fBodyAcc-std()-Y"                  N/m2
+		"fBodyAcc-std()-Z"                  N/m2
+		"fBodyAccJerk-std()-X"              N/m2
+		"fBodyAccJerk-std()-Y"              N/m2
+		"fBodyAccJerk-std()-Z"              N/m2
+		"fBodyGyro-std()-X"                 Revolution/sec
+		"fBodyGyro-std()-Y"                 Revolution/sec
+		"fBodyGyro-std()-Z"                 Revolution/sec
+		"fBodyAccMag-std()"                 N/m2
+		"fBodyBodyAccJerkMag-std()"         N/m2
+		"fBodyBodyGyroMag-std()"            Revolution/sec
+		"fBodyBodyGyroJerkMag-std()"        Revolution/sec
