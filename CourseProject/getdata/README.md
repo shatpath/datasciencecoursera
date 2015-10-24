@@ -46,4 +46,5 @@
 	  	6) Wait till the RStudio R Console is back with the prompt as below
 	  	    > source('C:/<workingDir>/run_analysis.R')
 	  	    >
-	  	7) The script will create a new file named "TidyDataSet.txt" in  "UCI HAR Dataset" folder in your working directory
+	  	7) The script will create a new file named "TidyDataSet.txt" in  "UCI HAR Dataset" folder in your working 
+		   directory
